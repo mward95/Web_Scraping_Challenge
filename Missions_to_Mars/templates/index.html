@@ -33,9 +33,9 @@
                 <div class="col-lg-8 col-md-8 col-sm-12">
                 <h4>Featured Mars Image</h4>
                     <!-- If Images are False/None/Non-Existent, Then Default to Error Message -->
-                    <!-- <img src="{{mars.featured_image | default('static/images/error.png', true) }}" class="img-responsive" style="max-width:100%; max-height: auto;" alt="Mars Featured Image"/> -->
+                    <img src="{{mars.featured_image | default('static/images/error.png', true) }}" class="img-responsive" style="max-width:100%; max-height: auto;" alt="Mars Featured Image"/>
                     <!-- hardcoded to try and build the webiste while I work on fixing the scraping scrape_code.py -->
-                    <img src="{{mars.featured_image | default('https://spaceimages-mars.com/image/featured/mars3.jpg', true) }}" class="img-responsive" style="max-width:100%; max-height: auto;" alt="Mars Featured Image"/>
+                    <!-- <img src="{{mars.featured_image | default('https://spaceimages-mars.com/image/featured/mars3.jpg', true) }}" class="img-responsive" style="max-width:100%; max-height: auto;" alt="Mars Featured Image"/> -->
 
                 </div>
                     <!-- Mars Facts -->
